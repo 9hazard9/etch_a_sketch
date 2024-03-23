@@ -1,4 +1,4 @@
-const container = document.querySelector("#gridContainer");
+const container = document.getElementById("gridContainer");
 
 cells = 6;
 
@@ -12,4 +12,13 @@ for(let i = 1; i <= cells; i++) {
         row.appendChild(column);
     }
     container.appendChild(row);
+}
+for(const child of container.children) {
+    child.addEventListener('mouseover', (event) => {
+        event.target.style.backgroundColor = ("#" + (Math.floor(Math.random()*16777215).toString(16)));
+    });
+
+    child.addEventListener('mouseout', (event) => {
+        event.target.style.backgroundColor = '';
+    });
 }
