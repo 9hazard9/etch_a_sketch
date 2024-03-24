@@ -2,12 +2,6 @@
     box-sizing: border-box;
 }
 
-#gridContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .row {
     display: flex;
     flex-direction: column;
@@ -15,6 +9,39 @@
 }
 
 .column {
-    padding: 3px;
+    height: 20px;
+    width: 20px;
     border: 0.25px solid black;
+}
+
+.push{
+    border-style: inset;
+}
+
+#gridContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    border: none;
+    border-radius: 12px;
+    color: white;
+    background-color: lightskyblue;
+    padding: 20px 25px;
+    font-size: 16px;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
 }
